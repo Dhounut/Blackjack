@@ -1,0 +1,33 @@
+<!--Deven Weeden 340 proj 1-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" type="text/css" />
+    <script>
+        // detects if the browser supports modern features
+        function modern() {
+            return !!(window.addEventListener);
+        }
+
+        if (!modern()) {
+            //redirects if the browser is outdated.
+            window.location.href = "https://www.microsoft.com/en-us/edge?ep=1474&form=MA1411&es=222&cs=3937985797";
+        }
+    </script>
+    <script src="assets/scripts/menus.js"></script>
+    <script src="assets/scripts/builder.js"></script>
+    <script src="assets/scripts/game.js"></script>
+    <script src="assets/scripts/cards.js"></script>
+    <script src="assets/scripts/form.js"></script>
+</head>
+
+
+<body onload="initialize('init')">
+    <div id='main'></div>
+    <button id='startOverBtn' onclick="location.href = location.href;">Begin Again</button>
+    <button id = 'play' onclick='completionCheck()'>Free Play</button>
+</body>
+</html>
